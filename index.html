@@ -4,41 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Hub</title>
-     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Movie Hub</h1>
-    <div>
-        <form id="movie-form" action="">
-            <input id="movie-input" type="text" placeholder="Search movie (e.g)">
-            <button>Search</button>
+    <div class="app-container">
+        <!-- Top Navigation -->
+        <header class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-ticket logo-icon"></i>
+                <h1>Movie <span class="underline">hub</span></h1>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-bars mobile-menu"></i>
+            </nav>
+        </header>
 
-            <!-- {Title: 'Shershaah',
-              Year: '2021',
-               imdbID: 'tt10295212', 
-               Type: 'movie', 
-               Poster: 'https://m.media-amazon.com/images/M/MV5BZTAzNzg0OG…E3XkEyXkFqcGc@._V1_QL75_UY562_CR21,0,380,562_.jpg' 
-               
-               
-               "https://m.media-amazon.com/images/M/MV5BMzE2ZmIzNTEtZTE1OS00ZDFhLTk2Y2YtZDEyNGIxNTdiYWFlXkEyXkFqcGc@._V1_QL75_UY562_CR35,0,380,562_.jpg"-->
+        <main>
+            <!-- Featured Cinematic Banner -->
+            <section class="featured-banner">
+                <div class="banner-content">
+                    <span class="trending-badge"><i class="fa-solid fa-fire"></i> Trending Now</span>
+                    <h2>The Dark Knight</h2>
+                    <p>When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</p>
+                </div>
+            </section>
 
+            <!-- Centered Info Section -->
+            <section class="info-section">
+                <p class="small-text">some info about the page:</p>
+                <p class="main-text">Welcome to Movie Hub, your cinematic destination.</p>
+                
+                <p class="small-text mt-3">how to use the page:</p>
+                <p class="main-text">Type a title below to discover films, view details, and more.</p>
+            </section>
+
+            <!-- Search Area -->
+            <section class="search-section">
+                <h2>Search Movie</h2>
+                <p class="small-text mb-2">enter title</p>
+                
+                <!-- Your original form ID -->
+                <form id="movie-form" class="search-form">
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input id="movie-input" type="text" placeholder="Search movie (e.g)" autocomplete="off">
+                    </div>
+                    
+                    <button class="submit-btn" type="submit">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </form>
+            </section>
+
+            <!-- Your original movie hub ID -->
             <div id="movie-hub">
-                 
-                 <!-- <div>
-                    <img src="https://m.media-amazon.com/images/M/MV5BMzE2ZmIzNTEtZTE1OS00ZDFhLTk2Y2YtZDEyNGIxNTdiYWFlXkEyXkFqcGc@._V1_QL75_UY562_CR35,0,380,562_.jpg" 
-
-                    alt="" width="200px">
-                </div>  
-                <div>
-                    <p>Shershaah</p>
-                    <p>2021</p>
-                </div> -->
-                
-                
+                <!-- JS injects here -->
             </div>
-
-            <script src="script.js"></script>
-        </form>
+            
+        </main>
     </div>
+
+    <!-- Your exact script link -->
+    <script src="script.js"></script>
 </body>
 </html>
